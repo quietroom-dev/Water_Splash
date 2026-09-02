@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width,
+        initial-scale=1,
+        maximum-scale=1,
+        user-scalable=no,
+        viewport-fit=cover">
+
+  <title>Real Water</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<main id="app">
+
+  <img
+    id="background"
+    src="background.png"
+    alt=""
+  >
+
+  <canvas id="water"></canvas>
+
+  <div class="top">
+    <label class="control">
+      背景変更
+      <input
+        id="file"
+        type="file"
+        accept="image/*"
+        hidden
+      >
+    </label>
+
+    <button
+      id="clear"
+      class="control"
+    >
+      水を消す
+    </button>
+  </div>
+
+  <div class="bottom">
+
+    <div class="row">
+      <strong>水量</strong>
+      <span id="value">55%</span>
+    </div>
+
+    <input
+      id="amount"
+      type="range"
+      min="5"
+      max="100"
+      value="55"
+    >
+
+    <small>
+      画面をタップすると水が飛んできます
+    </small>
+
+  </div>
+
+</main>
+
+<script src="app.js"></script>
+
+</body>
+</html>
